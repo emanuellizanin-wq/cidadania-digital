@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Direito & Códigos</title>
+    <style>
+        /* Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #1a252f;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #3498db;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #bdc3c7;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Seção de Introdução */
+        .intro {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        /* Grade de Códigos (Cards) */
+        .grid-codigos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-top: 5px solid #2c3e50;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        /* Botões */
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1a252f;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Legislação & Direito</h1>
+        <p>Consulte os principais códigos e leis do Brasil de forma rápida</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="intro">
+            <h2>Bem-vindo ao Portal de Consulta Jurídica</h2>
+            <p>Este espaço foi criado para facilitar o acesso direto aos textos da lei. Abaixo, você encontra os atalhos para as principais legislações e códigos vigentes, direcionados para as fontes oficiais e seguras do governo.</p>
+        </section>
+
+        <main class="grid-codigos">
+            
+            <div class="card">
+                <h2>Código Civil (CC)</h2>
+                <p>Regula os direitos e deveres das pessoas, dos bens, das relações de família, do casamento, de contratos, obrigações e sucessões.</p>
+                <a href="http://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm" target="_blank" class="btn">Acessar Código Civil</a>
+            </div>
+
+            <div class="card">
+                <h2>Código Penal (CP)</h2>
+                <p>Define os crimes e as contravenções penais no Brasil, estabelecendo as penas aplicáveis para cada tipo de infração cometida.</p>
+                <a href="http://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm" target="_blank" class="btn">Acessar Código Penal</a>
+            </div>
+
+            <div class="card">
+                <h2>Trabalhista (CLT)</h2>
+                <p>A Consolidação das Leis do Trabalho unifica a legislação trabalhista no Brasil, regulamentando as relações entre patrões e empregados.</p>
+                <a href="http://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm" target="_blank" class="btn">Acessar CLT</a>
+            </div>
+
+            <div class="card">
+                <h2>Consumidor (CDC)</h2>
+                <p>Estabelece os direitos de proteção ao consumidor, bem como as responsabilidades e deveres dos fornecedores de produtos e serviços.</p>
+                <a href="http://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm" target="_blank" class="btn">Acessar CDC</a>
+            </div>
+
+            <div class="card">
+                <h2>Processo Civil (CPC)</h2>
+                <p>Regula a tramitação das ações judiciais na esfera civil, definindo prazos, recursos e como os processos devem correr na Justiça.</p>
+                <a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm" target="_blank" class="btn">Acessar CPC</a>
+            </div>
+
+            <div class="card">
+                <h2>Constituição Federal</h2>
+                <p>A Lei Suprema do país. Garante os direitos fundamentais de todos os cidadãos e organiza a estrutura política do Estado brasileiro.</p>
+                <a href="http://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" class="btn">Acessar Constituição</a>
+            </div>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Portal Jurídico Informativo. Links direcionados ao Portal do Planalto.</p>
+    </footer>
+
+</body>
+</html>
